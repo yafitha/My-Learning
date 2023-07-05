@@ -1,4 +1,6 @@
-<h1>Password Generator</h1>
+
+<div class="MainDiv">
+<h1 >Password Generator</h1>
 
 <div>
   <label>Enter Length</label>
@@ -18,10 +20,11 @@
   <input (change)="OnChangeUseSymbols()" type="checkbox"/>
 </div>
 
-<button (click)="OnButtonClick()">Generate!</button>
+<button  class="btn btn-info" (click)="OnButtonClick()">Generate!</button>
 
 
 <div>
   <label> your password</label>
   <input [value]="password"/>
+</div>
 </div>
