@@ -22,7 +22,7 @@ export class AppComponent {
     this.isuseSymbols = !this.isuseSymbols;
   }
   OnButtonClick() {
-    this.password = "'fgfg";
+    this.password = "'eee";
   }
 
   onChangeLenght(event: any) {
