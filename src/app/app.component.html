@@ -2,28 +2,30 @@
 <div class="MainDiv">
 <h1>Password Generator for yafit hamilton</h1>
 
-<div>
+<div class="InfoDiv">
   <label>Enter Length</label>
   <input (input)="onChangeLenght($event)"/>
 </div>
 
-<div>
+<div class="OptinDiv">
   <label> Use Letters</label>
   <input (change)="OnChangeUseLetters()" type="checkbox"/>
 </div>
-<div>
+
+<div class="OptinDiv">
   <label> Use numbers</label>
   <input  (change)="OnChangeUseNumbers()" type="checkbox"/>
 </div>
+
 <div>
   <label> use Symbols</label>
   <input (change)="OnChangeUseSymbols()" type="checkbox"/>
 </div>
 
-<button  class="btn btn-info" (click)="OnButtonClick()">Generate!</button>
+<button  class="InfoDiv"  (click)="OnButtonClick()">Generate!</button>
 
 
-<div>
+<div *ngIf="password">
   <label> your password</label>
   <input [value]="password"/>
 </div>

@@ -1,4 +1,11 @@
 .MainDiv {
     text-align: center;
-    margin-top: 50px; 
-};
+    padding-top: 50px; 
+    background-color: lightcoral;
+
+.InfoDiv
+{
+    margin-top: 30px;
+}
+}
+
